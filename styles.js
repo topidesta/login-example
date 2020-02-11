@@ -4,11 +4,12 @@ export default StyleSheet.create({
   container: {
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'black',
+    backgroundColor: '#880E4F',
     color: '#002f6c',
   },
   heading: {
-    fontSize: 25,
+    padding: 100,
+    fontSize: 50,
     textAlign: 'center',
     color: 'white',
   },

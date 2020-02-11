@@ -6,11 +6,11 @@ class Home extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.heading}>Login into the application:</Text>
+        <Text style={styles.heading}>Login to the app:</Text>
         <TextInput style={styles.input} />
         <TextInput style={styles.input} />
 
-        <Button title={'Login'} onPress={butttonClicked} />
+        <Button title={'Log in'} onPress={butttonClicked} />
       </View>
     );
   }
