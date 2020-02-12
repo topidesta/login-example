@@ -7,6 +7,13 @@ export default StyleSheet.create({
     backgroundColor: '#880E4F',
     color: '#002f6c',
   },
+  textForInput: {
+    color: 'white',
+  },
+  buttons: {
+    color: 'white',
+    backgroundColor: 'black',
+  },
   heading: {
     padding: 100,
     fontSize: 50,
