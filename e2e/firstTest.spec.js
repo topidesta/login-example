@@ -1,14 +1,16 @@
-describe('Example', () => {
+import * as detox from 'detox';
+
+describe('Several tests on screen', () => {
   beforeEach(async () => {
-    await device.reloadReactNative();
+    await detox.device.reloadReactNative();
   });
 
-  it('should show "Ingresar datos:"', async () => {
-    await expect(element(by.text('Ingresar datos:'))).toBeVisible();
+  it('should show Ingresar datos textField:', async () => {
+    await expect(detox.element(detox.by.text('Ingresar datos:'))).toBeVisible();
   });
 
-  it('should complete "Nombre" and "Apellido"', async () => {
-    await element(by.id('name')).typeText('Claudio');
-    await element(by.id('lastName')).typeText('Garcete');
+  it('should complete Nombre and Apellido input', async () => {
+    await detox.element(detox.by.id('name')).typeText('Claudio');
+    await detox.element(detox.by.id('lastName')).typeText('Garcete');
   });
 });
