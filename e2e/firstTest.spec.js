@@ -1,5 +1,7 @@
 import * as detox from 'detox';
 
+// detox test --configuration ios.sim.debug
+
 describe('Several tests on screen', () => {
   beforeEach(async () => {
     await detox.device.reloadReactNative();
