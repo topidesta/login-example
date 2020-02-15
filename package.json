@@ -4,9 +4,13 @@
   "private": true,
   "scripts": {
     "start": "react-native start",
-    "e2e:test": "detox test -c ios.sim.debug",
+    "e2e:test": "detox test -c ios.release",
     "e2e:build": "detox build -c ios.release",
-    "e2e:ci": "npm run e2e:build && npm run e2e:test -- --cleanup"
+    "e2e:ci": "npm run e2e:build && npm run e2e:test -- --cleanup",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "test": "jest",
+    "lint": "eslint ."
   },
   "dependencies": {
     "react": "16.9.0",
