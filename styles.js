@@ -12,7 +12,6 @@ export default StyleSheet.create({
   },
   buttons: {
     color: 'white',
-    backgroundColor: 'black',
   },
   heading: {
     padding: 100,
