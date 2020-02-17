@@ -16,14 +16,16 @@
 }
 }
 
-
-----------
-
+---
 
 If you want to create .apk then run command :
 
 cd android
 ./gradlew assembleRelease
+./gradlew assembleAndroidTest
+
+//Esto borrra lo q esta en outputs.. ->
+./gradlew clean && ./gradlew :app:bundleRelease
 
 It will generate release apk here :
 android/app/build/output/apk/release/app-release.apk
